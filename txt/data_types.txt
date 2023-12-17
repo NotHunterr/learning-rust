@@ -1,0 +1,40 @@
+
+
+
+fn main() {
+    println!("Let's get rust!");
+
+    // i means it can be neg or pos, u means only pos: ranges from 8, 16, 32, 64, 128
+    // u8 = 255
+    // i8 = (-128)2^7 - (127)
+    let _x: u32 = 972;
+
+    // f32, f64
+    let _f: f32 = 10.612;
+
+    // booleans, true or false
+    let _true_or_false: bool = false; // can use 1 as true, 0 as false 
+
+    // single character (MUST USE SINGLE QUOTATIONS) 
+    let _letter: char = 'a';
+
+
+    // COMPOUND TYPES
+    //define what data type each element will be, immutable
+    let mut tup: (bool, char, u32) = (true, 'c', 14);
+
+    
+    // access specific element from tuple
+    println!("{}", tup.0); // will take the first element
+    tup.0 = false; // changing the first element
+    println!("{}", tup.0);
+
+    // ARRAYS 
+
+    let arr: [u16; 5] = [1, 2, 3, 4, 5];
+    println!("{}", arr[0])
+
+
+
+}
+

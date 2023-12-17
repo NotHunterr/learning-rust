@@ -1,0 +1,28 @@
+
+use std::io;
+
+
+fn main() {
+    let x = 255 as i64;
+    let y: i32 = 10;
+
+    let z = x + (y as i64);
+
+    println!("{}", z);
+
+    // CONVERT STRING TO INT
+
+    println!("Please enter a number: ");
+    let mut input = String::new();
+    io::stdin()
+        .read_line(&mut input)
+        .expect("Expected to read line");
+
+    let int_input: i64 = input.trim().parse().unwrap();
+
+
+    println!("Your number was + 2 is {}", int_input + 2)
+
+
+
+}
